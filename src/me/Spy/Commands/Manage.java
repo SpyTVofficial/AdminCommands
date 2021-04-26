@@ -17,6 +17,8 @@ public class Manage implements CommandExecutor{
 		    if(p.hasPermission("Command.Manage")) {
 		    	Inventory Inv = Bukkit.createInventory(p, 27, "§cManager");
 		    	Inv.setItem(12, Utils.createItem(Material.REDSTONE, 1, 0, "§cSerers"));
+		    	Inv.setItem(14, Utils.createItem(Material.SKULL, 1, 1, "§aUser"));
+		    	Inv.setItem(13, Utils.createItem(Material.IRON_FENCE, 1, 0, "§cPunishments"));
 		    	p.openInventory(Inv);
 		    } else {
 		    	p.sendMessage("§cKeine Rechte!");

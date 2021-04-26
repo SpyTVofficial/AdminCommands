@@ -17,6 +17,7 @@ public class AdminWarp implements CommandExecutor{
 		    if (p.hasPermission("Command.AdminWarp")) {
 		    	Inventory Inv = Bukkit.createInventory(p, 27, "§bAdminWarp");
 		    	Inv.setItem(12, Utils.createItem(Material.GRASS, 1, 0, "§aBuild-Server"));
+		    	Inv.setItem(13, Utils.createItem(Material.COOKIE, 1, 0, "§6BitCoin-Manager"));
 		    	Inv.setItem(14, Utils.createItem(Material.REDSTONE, 1, 0, "§cDevelopment-Server"));
 		    	p.openInventory(Inv);
 		    } else {

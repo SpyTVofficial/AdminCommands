@@ -1,0 +1,7 @@
+name: AdminCommands
+version: 1.0
+author: itsSpyTV
+main: me.Spy.Main.Main
+commands:
+  adminwarp:
+    description: Gives an Admin all the necessairy items.

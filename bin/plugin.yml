@@ -1,0 +1,9 @@
+name: AdminCommands
+version: 1.0
+author: itsSpyTV
+main: me.Spy.Main.Main
+commands:
+  adminwarp:
+    description: Lists all Warps, only Admins have access to.
+  manage: 
+    description: Manager for admins.

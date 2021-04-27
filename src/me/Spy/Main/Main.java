@@ -1,13 +1,15 @@
 package me.Spy.Main;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.Spy.Commands.AdminWarp;
-import me.Spy.Commands.Manage;
+import me.Spy.Commands.GiveAdminItems;
+import me.Spy.Inventorys.ManageInv;
 
 public class Main extends JavaPlugin {
 	
 	public void onEnable() {
+		Bukkit.getConsoleSender().sendMessage("§aPlugin Erfolgreich aktiviert");
 		init();
 	}
 	
@@ -16,8 +18,8 @@ public class Main extends JavaPlugin {
 	}
 	
 	private void init() {
-		getCommand("adminwarp").setExecutor(new AdminWarp());
-		getCommand("manage").setExecutor(new Manage());
+		Bukkit.getPluginManager().registerEvents(new ManageInv(), this);
+		getCommand("giveadminitems").setExecutor(new GiveAdminItems());
 	}
 
 }
